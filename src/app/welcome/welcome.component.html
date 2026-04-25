@@ -1,5 +1,8 @@
-<div class="container" *ngIf="errorMessageFromService && !welcomeMessageFromService">
-  {{errorMessageFromService}}
+<div
+  class="container"
+  *ngIf="errorMessageFromService && !welcomeMessageFromService"
+>
+  {{ errorMessageFromService }}
 </div>
 
 <h1>Welcome!</h1>
@@ -15,7 +18,10 @@
   </button>
 </div>
 
-<div class="container" *ngIf="welcomeMessageFromService && !errorMessageFromService">
+<div
+  class="container"
+  *ngIf="welcomeMessageFromService && !errorMessageFromService"
+>
   <h2>Your Customized Welcome Message</h2>
-  {{welcomeMessageFromService}}
+  {{ welcomeMessageFromService }}
 </div>
